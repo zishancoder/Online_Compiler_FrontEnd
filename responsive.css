@@ -1,0 +1,41 @@
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .side-bar{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #F5EFE6;
+        width: 100vw;
+        height:15vh;
+    }
+
+    .side-bar i{
+        color: rgb(54, 53, 53);
+        font-size: 2rem;
+        padding: 0.5rem;
+        margin-top: 0rem;
+        border-radius: 5px;
+    }
+
+    .editor-container{
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .output-console{
+        width: 100vw;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    .logo{
+        font-size: 1.8rem;
+    }
+}

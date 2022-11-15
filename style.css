@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+:root{
+    --navbarHeight:10vh;
+    --remainHeight:calc(100vh - var(--navbarHeight));
+}
+
+.container{
+    display: flex;
+}
+
+.side-bar{
+    display: flex;
+    flex-direction:column;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    background-color: #F5EFE6;
+    width: 4vw;
+    height:var(--remainHeight);
+}
+
+.editor-container{
+    width: 60vw;
+    height: var(--remainHeight);
+    border-right: 2px solid black;
+}
+
+.output-console{
+    width: 40vw;
+    height: var(--remainHeight);
+}
+
+.logo-container{
+    background-color: #F5EFE6;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height:var(--navbarHeight);
+}
+
+.logo{
+    font-size: 3rem;
+    padding-left: 16px;
+}
+
+.side-bar i{
+    color: rgb(54, 53, 53);
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: 1px solid black; 
+    border-radius: 25px;
+}
+
+.side-bar i:hover{
+    background-color: brown;
+}
+
+.side-bar .fa-java{
+    background-color: brown;
+}
+
+.editor-container .run-btn{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+
+.editor-container .run-btn i{
+    font-size: 1.5rem;
+    padding-right: 2rem;
+}
+
+.editor-container .run-btn i:hover{
+    cursor: pointer;
+}
+
+.editor-container .run-btn p{
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+.editor-container .editor{
+    height: 95%;
+    width: 100%;
+}
+
+.output-console .output-header{
+    height: 5%;
+    background-color: rgb(62, 58, 58);
+    color: white;
+}
+
+.output-console .output-header p{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.output-console .output{
+    height: auto;
+    overflow: auto;
+}
+
+select{
+    margin-left: 10px;
+    border: none;
+    border-radius: 2px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.input-header{
+    height: 5%;
+    width: 100%;
+    background-color: rgb(62, 58, 58);
+    color: white;
+}
+
+.input-header p{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.input{
+    height:45%;
+    width: 100%;
+    overflow: auto;
+    font-size: 1.8rem;
+    outline: none;
+    padding: 1rem;
+    resize: vertical;
+}
+
+
+.icon{
+    padding-left:16px;
+}
+.icon img{
+    padding-top: 10px;
+    width:3rem;
+}
